@@ -1,3 +1,5 @@
+ # Implemento una cola con deque, utilizando append() para agregar elementos y popleft() para quitar el primero.
+
 from collections import deque
 
 
