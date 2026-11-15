@@ -1,3 +1,4 @@
+# Utilizo una pila para guardar temporalmente algunas notificaciones
 class Pila:
     def __init__(self):
         self.elementos = []
