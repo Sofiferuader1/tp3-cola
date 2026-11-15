@@ -1,7 +1,7 @@
 from cola import Cola
 from pila import Pila
 
-
+# Eliminar notificaciones de Facebook
 def eliminar_notificaciones_facebook(cola):
     cantidad = cola.tamanio()
 
@@ -11,7 +11,7 @@ def eliminar_notificaciones_facebook(cola):
         if notificacion["aplicacion"] != "Facebook":
             cola.arribo(notificacion)
 
-
+# Mostrar notificaciones de Twitter con Python
 def mostrar_twitter_python(cola):
     cantidad = cola.tamanio()
 
@@ -26,7 +26,7 @@ def mostrar_twitter_python(cola):
 
         cola.arribo(notificacion)
 
-
+# Guardar notificaciones entre dos horarios
 def guardar_notificaciones_entre_horas(cola):
     pila_temporal = Pila()
     cantidad = cola.tamanio()
@@ -44,7 +44,7 @@ def guardar_notificaciones_entre_horas(cola):
 
     return pila_temporal
 
-
+# El programa ejecuta las funciones anteriores
 cola_notificaciones = Cola()
 
 cola_notificaciones.arribo({
@@ -83,7 +83,7 @@ cola_notificaciones.arribo({
     "mensaje": "Mensaje nuevo"
 })
 
-
+# El programa muestra los resultados
 print("COLA ORIGINAL:")
 cola_notificaciones.mostrar()
 
